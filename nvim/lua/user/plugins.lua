@@ -5,7 +5,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function(use)
-    
     use "wbthomason/packer.nvim"
     use "nvim-lua/plenary.nvim"
     use {
@@ -27,7 +26,6 @@ return require('packer').startup(function(use)
     use {
         "nvim-treesitter/nvim-treesitter",
     }
-    use "jose-elias-alvarez/null-ls.nvim"
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
     if packer_bootstrap then
         require('packer').sync()
