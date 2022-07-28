@@ -5,3 +5,4 @@ bn=$(cat $BAT_PATH/energy_now)
 bf=$(cat $BAT_PATH/energy_full)
 
 echo $((100*bn/bf))%
+``
