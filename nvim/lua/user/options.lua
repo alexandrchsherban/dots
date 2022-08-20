@@ -20,10 +20,11 @@ local options = {
     sidescrolloff = 8,
     hlsearch = false,
     incsearch = true,
+    splitright = false
 }
 
 for k, v in pairs(options) do
-  vim.opt[k] = v
+    vim.opt[k] = v
 end
 
 vim.opt.shortmess:append "c"
