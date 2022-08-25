@@ -25,14 +25,15 @@ sudo apt update -y
 sudo apt upgrade -y
 sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 -y
 mkdir ~/dev
-cd dev
+cd ~/dev
 git clone https://github.com/alexandrchsherban/dots
 cd dots
 cp wallpaper.png ~/Pictures/
 gsettings set org.gnome.desktop.background picture-uri "$HOME/Pictures/wallpaper.png"
 cp -r nvim ~/.config/
 cp .tmux.conf ~
-cp scripts/* /usr/bin/
+sudo cp scripts/* /usr/bin/
+sudo chmod +x /usr/bin/*
 sudo wget -O /usr/bin/nvim https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 sudo chmod +x /usr/bin/nvim
 cd ~/Downloads
