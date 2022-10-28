@@ -28,7 +28,7 @@ mkdir ~/dev
 cd ~/dev
 git clone https://github.com/alexandrchsherban/dots
 cd dots
-cp wallpaper.png ~/Pictures/
+cp wallpaper.png pfp.png ~/Pictures/
 gsettings set org.gnome.desktop.background picture-uri "$HOME/Pictures/wallpaper.png"
 cp -r nvim ~/.config/
 cp .tmux.conf ~
